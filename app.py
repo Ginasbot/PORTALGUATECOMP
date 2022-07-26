@@ -30,12 +30,12 @@ from firebase_admin import credentials, firestore, initialize_app
 #                                                      MANEJO DE LOGS
 #
 ########################################################################################################################
-handler = RotatingFileHandler(os.path.join(app.root_path, 'logs', 'oboeqa_web.log'), maxBytes=102400, backupCount=10)
-logging_format = logging.Formatter(
-    '%(asctime)s - %(levelname)s - %(filename)s - %(funcName)s - %(lineno)s - %(message)s')
+#handler = RotatingFileHandler(os.path.join(app.root_path, 'logs', 'oboeqa_web.log'), maxBytes=102400, backupCount=10)
+#logging_format = logging.Formatter(
+ #   '%(asctime)s - %(levelname)s - %(filename)s - %(funcName)s - %(lineno)s - %(message)s')
 
-handler.setFormatter(logging_format)
-app.logger.addHandler(handler)
+#handler.setFormatter(logging_format)
+#app.logger.addHandler(handler)
 
 @app.errorhandler(404)
 def page_not_found(error):

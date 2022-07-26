@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Portal Chasqui</title>
+      <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}"/>
+  <!-- plugins:css -->
+  <link href="{{ url_for('static', filename='New_portal/vendors/feather/feather.css') }}"  rel="stylesheet" type="text/css"  />
+  <link href="{{ url_for('static', filename='New_portal/vendors/ti-icons/css/themify-icons.css') }}"  rel="stylesheet" type="text/css"  />
+  <link href="{{ url_for('static', filename='New_portal/vendors/css/vendor.bundle.base.css') }}"  rel="stylesheet" type="text/css"  />
+  <link href="{{ url_for('static', filename='New_portal/css/vertical-layout-light/style.css') }}"  rel="stylesheet" type="text/css"  />
+  <link   href="{{ url_for('static', filename='New_portal/images/logo-mini.svg') }}"  rel="stylesheet" type="image/png"  />
+
+<style>
+.bgimg-1 {
+background-image: url("{{ url_for('static', filename='New_portal/images/logo1.svg') }}");
+      height: 100vh;
+
+/* Center and scale the image nicely */
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;}
+</style>
+</head>
+
+<body>
+  <div class="container-scroller">
+    <div class="container-fluid page-body-wrapper full-page-wrapper ">
+      <div class="content-wrapper d-flex align-items-center auth px-0 bgimg-1">
+        <div class="row w-100 mx-0">
+          <div class="col-lg-4 mx-auto">
+            <div class="auth-form-light text-left py-5 px-4 px-sm-5">
+           <!--   <div class="brand-logo">
+                <img src="{{ url_for('static', filename='New_portal/images/logochasky.svg') }}"  alt="logo">
+              </div>-->
+               {% with messages = get_flashed_messages(with_categories=true) %}
+ {% if messages %}
+   {% for category, message in messages %}
+     <div class="alert alert-{{ category }} alert-dismissible fade show">{{ message }}
+       <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+         <span aria-hidden="true">&times;</span>
+       </button>
+     </div>
+   {% endfor %}
+ {% endif %}
+ {% endwith %}
+
+ {% if error %}
+ <div class="alert alert-danger alert-dismissible fade show">{{error}}
+   <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+     <span aria-hidden="true">&times;</span>
+   </button>
+ </div>
+ {% endif %}
+
+ {% if msg %}
+ <div class="alert alert-success alert-dismissible fade show">{{msg}}
+   <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+     <span aria-hidden="true">&times;</span>
+   </button>
+ </div>
+ {% endif %}
+
+ <!-- end flash messages -->
+<div>
+    {% block body %}
+    {% endblock %}
+ <!-- flash messages -->
+ </div>
+              <h4>Gracias por ser parte de la comunidad Chasqui!</h4>
+              <h6 class="font-weight-light">Registrate </h6>
+
+              <form  method="POST"  class="pt-3" action="{{ url_for('admin_update_user', user_id=user[0]) }}">
+                      <div class="form-group">
+                  <input type="text" class="form-control form-control-lg" id="exampleInputUsername1" name="first_name"   required autofocus value="{{ user[1] }}">
+
+                      </div>
+                      <div class="form-group">
+                  <input type="text" class="form-control form-control-lg" id="exampleInputlastname" name="last_name" required value="{{ user[2] }}">
+
+                </div>
+
+                <div class="form-group">
+                  <input type="email" class="form-control form-control-lg" id="exampleInputEmail1" name="email" required value="{{ user[3] }}">
+
+                </div>
+
+                <div class="form-group">
+                  <input type="password" class="form-control form-control-lg" id="exampleInputPassword1" name="password" required value="{{ user[4] }}">
+
+                </div>
+
+                    <div class="form-group">
+                  <input type="password" class="form-control form-control-lg" id="exampleInputPassword2" name="confirm_password"  required value="{{ user[4] }}">
+                </div>
+
+            <select name="role" >
+             {% for role in all_roles %}
+           <option value="{{ role[0] }}"{% if role[0] == user[5] %} SELECTED {% endif %}>{{ role[0] }}</option>
+           {% endfor %}
+            </select>
+
+                          <p> <label  for="date_added"> Date Added: </label>
+            <input type="text" id="date_added1" name="date_added" required value="{{ user[6] }}" readonly></p>
+            <p> <label  for="date_modified"> Date Modifed: </label>
+                <input type="text" id="date_modified1" name="date_modified" required value="{{ user[7] }}" readonly></p>
+
+        <p>
+
+
+                <!--
+                <div class="mb-4">
+                  <div class="form-check">
+                    <label class="form-check-label text-muted">
+                      <input type="checkbox" class="form-check-input">
+                      I agree to all Terms & Conditions
+                    </label>
+                  </div>
+                </div>}-->
+                <div class="mt-3">
+
+                  <input type="submit"  class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn"   value="Update User"></p>
+                </div>
+
+
+              </form>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- content-wrapper ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+  <!-- plugins:js -->
+
+
+    <script src=  "{{ url_for('static', filename='New_portal/js/off-canvas.js') }}"></script>
+  <script src="{{ url_for('static', filename='New_portal/js/hoverable-collapse.js') }}"></script>
+  <script src=  "{{ url_for('static', filename='New_portal/js/template.js') }}"></script>
+  <script src=  "{{ url_for('static', filename='New_portal/js/settings.js') }}"></script>
+  <script src=  "{{ url_for('static', filename='New_portal/js/todolist.js') }}"></script>
+
+  <!-- endinject -->
+</body>
+
+</html>

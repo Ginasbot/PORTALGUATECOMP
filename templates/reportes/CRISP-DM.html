@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Portal Chasky</title>
+      <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}"/>
+  <!-- plugins:css -->
+    <link href="{{ url_for('static', filename='New_portal/vendors/feather/feather.css') }}"  rel="stylesheet" type="text/css"  />
+  <link href="{{ url_for('static', filename='New_portal/vendors/ti-icons/css/themify-icons.css') }}"  rel="stylesheet" type="text/css"  />
+  <link href="{{ url_for('static', filename='New_portal/vendors/css/vendor.bundle.base.css') }}"  rel="stylesheet" type="text/css"  />
+  <link href="{{ url_for('static', filename='New_portal/css/vertical-layout-light/style.css') }}"  rel="stylesheet" type="text/css"  />
+
+    <link href="{{ url_for('static', filename='New_portal/vendors/datatables.net-bs4/dataTables.bootstrap4.css') }}"  rel="stylesheet" type="text/css"  />
+    <link href="{{ url_for('static', filename='New_portal/vendors/ti-icons/css/themify-icons.css') }}"  rel="stylesheet" type="text/css"  />
+    <link href="{{ url_for('static', filename='New_portal/js/select.dataTables.min.css') }}"  rel="stylesheet" type="text/css"  />
+
+  <link   href="{{ url_for('static', filename='New_portal/images/logo-mini.svg') }}"  rel="stylesheet" type="image/png"  />
+
+</head>
+<body>
+  <div class="container-scroller">
+    <!-- partial:partials/_navbar.html -->
+
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+
+
+      <!-- partial -->
+      <!-- partial:partials/_sidebar.html -->
+    <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+          <span class="icon-menu"></span>
+        </button>
+
+
+
+      <!-- partial -->
+      <div class="main-panel">
+
+
+        <div class="content-wrapper">
+
+
+
+ {% include 'reportes/CRISP-DM Analysis Template.html' %}
+
+
+
+        </div>
+
+
+
+
+        <!-- content-wrapper ends -->
+        <!-- partial:partials/_footer.html -->
+        <footer class="footer">
+          <div class="d-sm-flex justify-content-center justify-content-sm-between">
+            <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2022. Advance Analitics BN</span>
+            <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Banco de la Nación <i class="ti-heart text-danger ml-1"></i></span>
+          </div>
+          <div class="d-sm-flex justify-content-center justify-content-sm-between">
+            <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Contruido por Luiggi Silva</span>
+          </div>
+        </footer>
+        <!-- partial -->
+      </div>
+
+      <!-- main-panel ends -->
+    </div>
+
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+
+  <!-- plugins:js -->
+
+
+          <script src="{{ url_for('static', filename='New_portal/vendors/js/vendor.bundle.base.js') }}"></script>
+
+    <script src="{{ url_for('static', filename='New_portal/vendors/chart.js/Chart.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='New_portal/vendors/datatables.net/jquery.dataTables.js') }}"></script>
+    <script src="{{ url_for('static', filename='New_portal/vendors/datatables.net-bs4/dataTables.bootstrap4.js') }}"></script>
+    <script src="{{ url_for('static', filename='New_portal/js/dataTables.select.min.js') }}"></script>
+
+    <script src="{{ url_for('static', filename='New_portal/js/off-canvas.js') }}"></script>
+    <script src="{{ url_for('static', filename='New_portal/js/hoverable-collapse.js') }}"></script>
+    <script src="{{ url_for('static', filename='New_portal/js/template.js') }}"></script>
+    <script src="{{ url_for('static', filename='New_portal/js/settings.js') }}"></script>
+    <script src="{{ url_for('static', filename='New_portal/js/todolist.js') }}"></script>
+
+    <script src="{{ url_for('static', filename='New_portal/js/dashboard.js') }}"></script>
+    <script src="{{ url_for('static', filename='New_portal/js/Chart.roundedBarCharts.js') }}"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page -->
+
+
+  <!-- End plugin js for this page -->
+  <!-- inject:js -->
+
+  <!-- End custom js for this page-->
+</body>
+
+</html>
+
+
+
+

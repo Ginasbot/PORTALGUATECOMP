@@ -1,0 +1,1371 @@
+2022-06-28 18:04:02,239 - ERROR - app.py - special_exception_handler - 43 - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2022-06-28 18:04:02,305 - ERROR - app.py - log_exception - 1891 - Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1926, in dispatch_request
+    self.raise_routing_exception(req)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1908, in raise_routing_exception
+    raise request.routing_exception
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\ctx.py", line 350, in match_request
+    result = self.url_adapter.match(return_rule=True)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\werkzeug\routing.py", line 1945, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1816, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1741, in handle_http_exception
+    handler = self._find_error_handler(e)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1708, in _find_error_handler
+    handler = handler_map.get(cls)
+AttributeError: 'function' object has no attribute 'get'
+2022-06-28 18:04:02,310 - ERROR - app.py - special_exception_handler - 43 - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2022-06-28 18:04:18,490 - ERROR - app.py - log_exception - 1891 - Exception on /test_01 [GET]
+Traceback (most recent call last):
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File ".\app.py", line 156, in test_01
+    return render_template('reportes/CRISP-DM.html')
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\templating.py", line 137, in render_template
+    return _render(
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "D:\PORTAL_ANALITICA\templates\reportes\CRISP-DM.html", line 100, in top-level template code
+    {% include 'reportes\CRISP-DM Analysis Template.html' %}
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\templating.py", line 60, in get_source
+    return self._get_source_fast(environment, template)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\templating.py", line 89, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: reportes\CRISP-DM Analysis Template.html
+2022-06-28 18:04:18,492 - ERROR - app.py - special_exception_handler - 43 - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2022-06-28 18:04:18,557 - ERROR - app.py - log_exception - 1891 - Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1926, in dispatch_request
+    self.raise_routing_exception(req)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1908, in raise_routing_exception
+    raise request.routing_exception
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\ctx.py", line 350, in match_request
+    result = self.url_adapter.match(return_rule=True)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\werkzeug\routing.py", line 1945, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1816, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1741, in handle_http_exception
+    handler = self._find_error_handler(e)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1708, in _find_error_handler
+    handler = handler_map.get(cls)
+AttributeError: 'function' object has no attribute 'get'
+2022-06-28 18:04:18,558 - ERROR - app.py - special_exception_handler - 43 - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2022-06-28 18:05:06,206 - ERROR - app.py - log_exception - 1891 - Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1926, in dispatch_request
+    self.raise_routing_exception(req)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1908, in raise_routing_exception
+    raise request.routing_exception
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\ctx.py", line 350, in match_request
+    result = self.url_adapter.match(return_rule=True)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\werkzeug\routing.py", line 1945, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1816, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1741, in handle_http_exception
+    handler = self._find_error_handler(e)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1708, in _find_error_handler
+    handler = handler_map.get(cls)
+AttributeError: 'function' object has no attribute 'get'
+2022-06-28 18:05:06,212 - ERROR - app.py - special_exception_handler - 43 - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2022-06-28 18:05:17,334 - ERROR - app.py - log_exception - 1891 - Exception on /test_01 [GET]
+Traceback (most recent call last):
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File ".\app.py", line 156, in test_01
+    return render_template('reportes/CRISP-DM.html')
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\templating.py", line 137, in render_template
+    return _render(
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "D:\PORTAL_ANALITICA\templates\reportes\CRISP-DM.html", line 100, in top-level template code
+    {% include 'reportes\CRISP-DM Analysis Template.html' %}
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\templating.py", line 60, in get_source
+    return self._get_source_fast(environment, template)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\templating.py", line 89, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: reportes\CRISP-DM Analysis Template.html
+2022-06-28 18:05:17,345 - ERROR - app.py - special_exception_handler - 43 - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2022-06-28 18:05:17,415 - ERROR - app.py - log_exception - 1891 - Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1926, in dispatch_request
+    self.raise_routing_exception(req)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1908, in raise_routing_exception
+    raise request.routing_exception
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\ctx.py", line 350, in match_request
+    result = self.url_adapter.match(return_rule=True)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\werkzeug\routing.py", line 1945, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1816, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1741, in handle_http_exception
+    handler = self._find_error_handler(e)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1708, in _find_error_handler
+    handler = handler_map.get(cls)
+AttributeError: 'function' object has no attribute 'get'
+2022-06-28 18:05:17,420 - ERROR - app.py - special_exception_handler - 43 - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2022-06-28 18:05:32,858 - ERROR - app.py - log_exception - 1891 - Exception on /test_01 [GET]
+Traceback (most recent call last):
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File ".\app.py", line 156, in test_01
+    return render_template('reportes/CRISP-DM.html')
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\templating.py", line 137, in render_template
+    return _render(
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "D:\PORTAL_ANALITICA\templates\reportes\CRISP-DM.html", line 100, in top-level template code
+    {% include 'reportes\CRISP-DM Analysis Template.html' %}
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\templating.py", line 60, in get_source
+    return self._get_source_fast(environment, template)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\templating.py", line 89, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: reportes\CRISP-DM Analysis Template.html
+2022-06-28 18:05:32,859 - ERROR - app.py - special_exception_handler - 43 - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2022-06-28 18:05:32,912 - ERROR - app.py - log_exception - 1891 - Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1926, in dispatch_request
+    self.raise_routing_exception(req)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1908, in raise_routing_exception
+    raise request.routing_exception
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\ctx.py", line 350, in match_request
+    result = self.url_adapter.match(return_rule=True)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\werkzeug\routing.py", line 1945, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1816, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1741, in handle_http_exception
+    handler = self._find_error_handler(e)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1708, in _find_error_handler
+    handler = handler_map.get(cls)
+AttributeError: 'function' object has no attribute 'get'
+2022-06-28 18:05:32,914 - ERROR - app.py - special_exception_handler - 43 - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2022-06-28 18:06:03,770 - ERROR - app.py - log_exception - 1891 - Exception on /test_01 [GET]
+Traceback (most recent call last):
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File ".\app.py", line 156, in test_01
+    return render_template('reportes/CRISP-DM.html')
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\templating.py", line 137, in render_template
+    return _render(
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "D:\PORTAL_ANALITICA\templates\reportes\CRISP-DM.html", line 100, in top-level template code
+    {% include 'reportes\CRISP-DM Analysis Template.html' %}
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\templating.py", line 60, in get_source
+    return self._get_source_fast(environment, template)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\templating.py", line 89, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: reportes\CRISP-DM Analysis Template.html
+2022-06-28 18:06:03,780 - ERROR - app.py - special_exception_handler - 43 - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2022-06-28 18:06:03,838 - ERROR - app.py - log_exception - 1891 - Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1926, in dispatch_request
+    self.raise_routing_exception(req)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1908, in raise_routing_exception
+    raise request.routing_exception
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\ctx.py", line 350, in match_request
+    result = self.url_adapter.match(return_rule=True)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\werkzeug\routing.py", line 1945, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1816, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1741, in handle_http_exception
+    handler = self._find_error_handler(e)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1708, in _find_error_handler
+    handler = handler_map.get(cls)
+AttributeError: 'function' object has no attribute 'get'
+2022-06-28 18:06:03,842 - ERROR - app.py - special_exception_handler - 43 - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2022-06-28 18:07:05,557 - ERROR - app.py - log_exception - 1891 - Exception on /test_01 [GET]
+Traceback (most recent call last):
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File ".\app.py", line 156, in test_01
+    return render_template('reportes/CRISP-DM.html')
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\templating.py", line 137, in render_template
+    return _render(
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "D:\PORTAL_ANALITICA\templates\reportes\CRISP-DM.html", line 100, in top-level template code
+    {% include 'reportes\CRISP-DM Analysis Template.html' %}
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\templating.py", line 60, in get_source
+    return self._get_source_fast(environment, template)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\templating.py", line 89, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: reportes\CRISP-DM Analysis Template.html
+2022-06-28 18:07:05,559 - ERROR - app.py - special_exception_handler - 43 - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2022-06-28 18:07:05,605 - ERROR - app.py - log_exception - 1891 - Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1926, in dispatch_request
+    self.raise_routing_exception(req)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1908, in raise_routing_exception
+    raise request.routing_exception
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\ctx.py", line 350, in match_request
+    result = self.url_adapter.match(return_rule=True)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\werkzeug\routing.py", line 1945, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1816, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1741, in handle_http_exception
+    handler = self._find_error_handler(e)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1708, in _find_error_handler
+    handler = handler_map.get(cls)
+AttributeError: 'function' object has no attribute 'get'
+2022-06-28 18:07:05,607 - ERROR - app.py - special_exception_handler - 43 - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2022-06-28 18:07:06,269 - ERROR - app.py - log_exception - 1891 - Exception on /test_01 [GET]
+Traceback (most recent call last):
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File ".\app.py", line 156, in test_01
+    return render_template('reportes/CRISP-DM.html')
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\templating.py", line 137, in render_template
+    return _render(
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "D:\PORTAL_ANALITICA\templates\reportes\CRISP-DM.html", line 100, in top-level template code
+    {% include 'reportes\CRISP-DM Analysis Template.html' %}
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\templating.py", line 60, in get_source
+    return self._get_source_fast(environment, template)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\templating.py", line 89, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: reportes\CRISP-DM Analysis Template.html
+2022-06-28 18:07:06,272 - ERROR - app.py - special_exception_handler - 43 - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2022-06-28 18:07:06,328 - ERROR - app.py - log_exception - 1891 - Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1926, in dispatch_request
+    self.raise_routing_exception(req)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1908, in raise_routing_exception
+    raise request.routing_exception
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\ctx.py", line 350, in match_request
+    result = self.url_adapter.match(return_rule=True)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\werkzeug\routing.py", line 1945, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1816, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1741, in handle_http_exception
+    handler = self._find_error_handler(e)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1708, in _find_error_handler
+    handler = handler_map.get(cls)
+AttributeError: 'function' object has no attribute 'get'
+2022-06-28 18:07:06,330 - ERROR - app.py - special_exception_handler - 43 - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2022-06-28 18:07:07,435 - ERROR - app.py - log_exception - 1891 - Exception on /test_01 [GET]
+Traceback (most recent call last):
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File ".\app.py", line 156, in test_01
+    return render_template('reportes/CRISP-DM.html')
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\templating.py", line 137, in render_template
+    return _render(
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "D:\PORTAL_ANALITICA\templates\reportes\CRISP-DM.html", line 100, in top-level template code
+    {% include 'reportes\CRISP-DM Analysis Template.html' %}
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\templating.py", line 60, in get_source
+    return self._get_source_fast(environment, template)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\templating.py", line 89, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: reportes\CRISP-DM Analysis Template.html
+2022-06-28 18:07:07,437 - ERROR - app.py - special_exception_handler - 43 - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2022-06-28 18:07:07,493 - ERROR - app.py - log_exception - 1891 - Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1926, in dispatch_request
+    self.raise_routing_exception(req)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1908, in raise_routing_exception
+    raise request.routing_exception
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\ctx.py", line 350, in match_request
+    result = self.url_adapter.match(return_rule=True)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\werkzeug\routing.py", line 1945, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1816, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1741, in handle_http_exception
+    handler = self._find_error_handler(e)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1708, in _find_error_handler
+    handler = handler_map.get(cls)
+AttributeError: 'function' object has no attribute 'get'
+2022-06-28 18:07:07,495 - ERROR - app.py - special_exception_handler - 43 - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2022-06-28 18:07:12,814 - ERROR - app.py - log_exception - 1891 - Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1926, in dispatch_request
+    self.raise_routing_exception(req)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1908, in raise_routing_exception
+    raise request.routing_exception
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\ctx.py", line 350, in match_request
+    result = self.url_adapter.match(return_rule=True)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\werkzeug\routing.py", line 1945, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1816, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1741, in handle_http_exception
+    handler = self._find_error_handler(e)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1708, in _find_error_handler
+    handler = handler_map.get(cls)
+AttributeError: 'function' object has no attribute 'get'
+2022-06-28 18:07:12,816 - ERROR - app.py - special_exception_handler - 43 - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2022-06-28 18:07:37,634 - ERROR - app.py - log_exception - 1891 - Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1926, in dispatch_request
+    self.raise_routing_exception(req)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1908, in raise_routing_exception
+    raise request.routing_exception
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\ctx.py", line 350, in match_request
+    result = self.url_adapter.match(return_rule=True)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\werkzeug\routing.py", line 1945, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1816, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1741, in handle_http_exception
+    handler = self._find_error_handler(e)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1708, in _find_error_handler
+    handler = handler_map.get(cls)
+AttributeError: 'function' object has no attribute 'get'
+2022-06-28 18:07:37,638 - ERROR - app.py - special_exception_handler - 43 - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2022-06-28 18:07:47,361 - ERROR - app.py - log_exception - 1891 - Exception on /test_01 [GET]
+Traceback (most recent call last):
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File ".\app.py", line 156, in test_01
+    return render_template('reportes/CRISP-DM .html')
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\templating.py", line 138, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\jinja2\environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\jinja2\environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\jinja2\environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\jinja2\loaders.py", line 115, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\templating.py", line 60, in get_source
+    return self._get_source_fast(environment, template)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\templating.py", line 89, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: reportes/CRISP-DM .html
+2022-06-28 18:07:47,372 - ERROR - app.py - special_exception_handler - 43 - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2022-06-28 18:07:47,441 - ERROR - app.py - log_exception - 1891 - Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1926, in dispatch_request
+    self.raise_routing_exception(req)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1908, in raise_routing_exception
+    raise request.routing_exception
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\ctx.py", line 350, in match_request
+    result = self.url_adapter.match(return_rule=True)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\werkzeug\routing.py", line 1945, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1816, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1741, in handle_http_exception
+    handler = self._find_error_handler(e)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1708, in _find_error_handler
+    handler = handler_map.get(cls)
+AttributeError: 'function' object has no attribute 'get'
+2022-06-28 18:07:47,447 - ERROR - app.py - special_exception_handler - 43 - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2022-06-28 18:07:54,021 - ERROR - app.py - log_exception - 1891 - Exception on /test_01 [GET]
+Traceback (most recent call last):
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File ".\app.py", line 156, in test_01
+    return render_template('reportes/CRISP-DM.html')
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\templating.py", line 137, in render_template
+    return _render(
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "D:\PORTAL_ANALITICA\templates\reportes\CRISP-DM.html", line 100, in top-level template code
+    {% include 'reportes\CRISP-DM Analysis Template.html' %}
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\templating.py", line 60, in get_source
+    return self._get_source_fast(environment, template)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\templating.py", line 89, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: reportes\CRISP-DM Analysis Template.html
+2022-06-28 18:07:54,030 - ERROR - app.py - special_exception_handler - 43 - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2022-06-28 18:07:54,077 - ERROR - app.py - log_exception - 1891 - Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1926, in dispatch_request
+    self.raise_routing_exception(req)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1908, in raise_routing_exception
+    raise request.routing_exception
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\ctx.py", line 350, in match_request
+    result = self.url_adapter.match(return_rule=True)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\werkzeug\routing.py", line 1945, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1816, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1741, in handle_http_exception
+    handler = self._find_error_handler(e)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1708, in _find_error_handler
+    handler = handler_map.get(cls)
+AttributeError: 'function' object has no attribute 'get'
+2022-06-28 18:07:54,081 - ERROR - app.py - special_exception_handler - 43 - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2022-06-28 18:08:18,222 - ERROR - app.py - log_exception - 1891 - Exception on /test_01 [GET]
+Traceback (most recent call last):
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File ".\app.py", line 156, in test_01
+    return render_template('reportes/CRISP-DM.html')
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\templating.py", line 137, in render_template
+    return _render(
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "D:\PORTAL_ANALITICA\templates\reportes\CRISP-DM.html", line 100, in top-level template code
+    {% include 'CRISP-DM Analysis Template.html' %}
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\templating.py", line 60, in get_source
+    return self._get_source_fast(environment, template)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\templating.py", line 89, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: reportes\CRISP-DM Analysis Template.html
+2022-06-28 18:08:18,226 - ERROR - app.py - special_exception_handler - 43 - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2022-06-28 18:08:18,279 - ERROR - app.py - log_exception - 1891 - Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1926, in dispatch_request
+    self.raise_routing_exception(req)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1908, in raise_routing_exception
+    raise request.routing_exception
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\ctx.py", line 350, in match_request
+    result = self.url_adapter.match(return_rule=True)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\werkzeug\routing.py", line 1945, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1816, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1741, in handle_http_exception
+    handler = self._find_error_handler(e)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1708, in _find_error_handler
+    handler = handler_map.get(cls)
+AttributeError: 'function' object has no attribute 'get'
+2022-06-28 18:08:18,281 - ERROR - app.py - special_exception_handler - 43 - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2022-06-28 18:08:19,883 - ERROR - app.py - log_exception - 1891 - Exception on /test_01 [GET]
+Traceback (most recent call last):
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File ".\app.py", line 156, in test_01
+    return render_template('reportes/CRISP-DM.html')
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\templating.py", line 137, in render_template
+    return _render(
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "D:\PORTAL_ANALITICA\templates\reportes\CRISP-DM.html", line 100, in top-level template code
+    {% include 'CRISP-DM Analysis Template.html' %}
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\templating.py", line 60, in get_source
+    return self._get_source_fast(environment, template)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\templating.py", line 89, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: reportes\CRISP-DM Analysis Template.html
+2022-06-28 18:08:19,885 - ERROR - app.py - special_exception_handler - 43 - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2022-06-28 18:08:19,950 - ERROR - app.py - log_exception - 1891 - Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1926, in dispatch_request
+    self.raise_routing_exception(req)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1908, in raise_routing_exception
+    raise request.routing_exception
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\ctx.py", line 350, in match_request
+    result = self.url_adapter.match(return_rule=True)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\werkzeug\routing.py", line 1945, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1816, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1741, in handle_http_exception
+    handler = self._find_error_handler(e)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1708, in _find_error_handler
+    handler = handler_map.get(cls)
+AttributeError: 'function' object has no attribute 'get'
+2022-06-28 18:08:19,952 - ERROR - app.py - special_exception_handler - 43 - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2022-06-28 18:08:21,319 - ERROR - app.py - log_exception - 1891 - Exception on /test_01 [GET]
+Traceback (most recent call last):
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File ".\app.py", line 156, in test_01
+    return render_template('reportes/CRISP-DM.html')
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\templating.py", line 137, in render_template
+    return _render(
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "D:\PORTAL_ANALITICA\templates\reportes\CRISP-DM.html", line 100, in top-level template code
+    {% include 'CRISP-DM Analysis Template.html' %}
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\templating.py", line 60, in get_source
+    return self._get_source_fast(environment, template)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\templating.py", line 89, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: reportes\CRISP-DM Analysis Template.html
+2022-06-28 18:08:21,322 - ERROR - app.py - special_exception_handler - 43 - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2022-06-28 18:08:21,377 - ERROR - app.py - log_exception - 1891 - Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1926, in dispatch_request
+    self.raise_routing_exception(req)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1908, in raise_routing_exception
+    raise request.routing_exception
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\ctx.py", line 350, in match_request
+    result = self.url_adapter.match(return_rule=True)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\werkzeug\routing.py", line 1945, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1816, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1741, in handle_http_exception
+    handler = self._find_error_handler(e)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1708, in _find_error_handler
+    handler = handler_map.get(cls)
+AttributeError: 'function' object has no attribute 'get'
+2022-06-28 18:08:21,379 - ERROR - app.py - special_exception_handler - 43 - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2022-06-28 18:08:46,741 - ERROR - app.py - log_exception - 1891 - Exception on /test_01 [GET]
+Traceback (most recent call last):
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File ".\app.py", line 156, in test_01
+    return render_template('reportes/CRISP-DM.html')
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\templating.py", line 137, in render_template
+    return _render(
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "D:\PORTAL_ANALITICA\templates\reportes\CRISP-DM.html", line 100, in top-level template code
+    {% include 'reportes/CRISP-DM Analysis Template.html' %}
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\templating.py", line 60, in get_source
+    return self._get_source_fast(environment, template)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\templating.py", line 89, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: reportes\CRISP-DM Analysis Template.html
+2022-06-28 18:08:46,744 - ERROR - app.py - special_exception_handler - 43 - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2022-06-28 18:08:46,804 - ERROR - app.py - log_exception - 1891 - Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1926, in dispatch_request
+    self.raise_routing_exception(req)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1908, in raise_routing_exception
+    raise request.routing_exception
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\ctx.py", line 350, in match_request
+    result = self.url_adapter.match(return_rule=True)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\werkzeug\routing.py", line 1945, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1816, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1741, in handle_http_exception
+    handler = self._find_error_handler(e)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1708, in _find_error_handler
+    handler = handler_map.get(cls)
+AttributeError: 'function' object has no attribute 'get'
+2022-06-28 18:08:46,806 - ERROR - app.py - special_exception_handler - 43 - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2022-06-28 18:08:48,426 - ERROR - app.py - log_exception - 1891 - Exception on /test_01 [GET]
+Traceback (most recent call last):
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File ".\app.py", line 156, in test_01
+    return render_template('reportes/CRISP-DM.html')
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\templating.py", line 137, in render_template
+    return _render(
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "D:\PORTAL_ANALITICA\templates\reportes\CRISP-DM.html", line 100, in top-level template code
+    {% include 'reportes/CRISP-DM Analysis Template.html' %}
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\templating.py", line 60, in get_source
+    return self._get_source_fast(environment, template)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\templating.py", line 89, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: reportes\CRISP-DM Analysis Template.html
+2022-06-28 18:08:48,429 - ERROR - app.py - special_exception_handler - 43 - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2022-06-28 18:08:48,486 - ERROR - app.py - log_exception - 1891 - Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1926, in dispatch_request
+    self.raise_routing_exception(req)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1908, in raise_routing_exception
+    raise request.routing_exception
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\ctx.py", line 350, in match_request
+    result = self.url_adapter.match(return_rule=True)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\werkzeug\routing.py", line 1945, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1816, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1741, in handle_http_exception
+    handler = self._find_error_handler(e)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1708, in _find_error_handler
+    handler = handler_map.get(cls)
+AttributeError: 'function' object has no attribute 'get'
+2022-06-28 18:08:48,488 - ERROR - app.py - special_exception_handler - 43 - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2022-06-28 18:10:01,163 - ERROR - app.py - log_exception - 1891 - Exception on /test_01 [GET]
+Traceback (most recent call last):
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File ".\app.py", line 156, in test_01
+    return render_template('reportes/CRISP-DM.html')
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\templating.py", line 137, in render_template
+    return _render(
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "D:\PORTAL_ANALITICA\templates\reportes\CRISP-DM.html", line 100, in top-level template code
+    <div class="content-wrapper">
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\templating.py", line 60, in get_source
+    return self._get_source_fast(environment, template)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\templating.py", line 89, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: reportes\CRISP-DM Analysis Template.html
+2022-06-28 18:10:01,167 - ERROR - app.py - special_exception_handler - 43 - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2022-06-28 18:10:01,216 - ERROR - app.py - log_exception - 1891 - Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1926, in dispatch_request
+    self.raise_routing_exception(req)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1908, in raise_routing_exception
+    raise request.routing_exception
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\ctx.py", line 350, in match_request
+    result = self.url_adapter.match(return_rule=True)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\werkzeug\routing.py", line 1945, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1816, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1741, in handle_http_exception
+    handler = self._find_error_handler(e)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1708, in _find_error_handler
+    handler = handler_map.get(cls)
+AttributeError: 'function' object has no attribute 'get'
+2022-06-28 18:10:01,218 - ERROR - app.py - special_exception_handler - 43 - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2022-06-28 18:10:04,223 - ERROR - app.py - log_exception - 1891 - Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1926, in dispatch_request
+    self.raise_routing_exception(req)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1908, in raise_routing_exception
+    raise request.routing_exception
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\ctx.py", line 350, in match_request
+    result = self.url_adapter.match(return_rule=True)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\werkzeug\routing.py", line 1945, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1816, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1741, in handle_http_exception
+    handler = self._find_error_handler(e)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1708, in _find_error_handler
+    handler = handler_map.get(cls)
+AttributeError: 'function' object has no attribute 'get'
+2022-06-28 18:10:04,224 - ERROR - app.py - special_exception_handler - 43 - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2022-06-28 18:10:05,522 - ERROR - app.py - log_exception - 1891 - Exception on /test_01 [GET]
+Traceback (most recent call last):
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File ".\app.py", line 156, in test_01
+    return render_template('reportes/CRISP-DM.html')
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\templating.py", line 137, in render_template
+    return _render(
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "D:\PORTAL_ANALITICA\templates\reportes\CRISP-DM.html", line 100, in top-level template code
+    <div class="content-wrapper">
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\templating.py", line 60, in get_source
+    return self._get_source_fast(environment, template)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\templating.py", line 89, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: reportes\CRISP-DM Analysis Template.html
+2022-06-28 18:10:05,524 - ERROR - app.py - special_exception_handler - 43 - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2022-06-28 18:10:05,581 - ERROR - app.py - log_exception - 1891 - Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1926, in dispatch_request
+    self.raise_routing_exception(req)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1908, in raise_routing_exception
+    raise request.routing_exception
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\ctx.py", line 350, in match_request
+    result = self.url_adapter.match(return_rule=True)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\werkzeug\routing.py", line 1945, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1816, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1741, in handle_http_exception
+    handler = self._find_error_handler(e)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1708, in _find_error_handler
+    handler = handler_map.get(cls)
+AttributeError: 'function' object has no attribute 'get'
+2022-06-28 18:10:05,582 - ERROR - app.py - special_exception_handler - 43 - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2022-06-28 18:20:13,519 - ERROR - app.py - log_exception - 1891 - Exception on /test_01 [GET]
+Traceback (most recent call last):
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File ".\app.py", line 156, in test_01
+    return render_template('CRISP-.html')
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\templating.py", line 138, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\jinja2\environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\jinja2\environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\jinja2\environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\jinja2\loaders.py", line 115, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\templating.py", line 60, in get_source
+    return self._get_source_fast(environment, template)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\templating.py", line 89, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: CRISP-.html
+2022-06-28 18:20:13,524 - ERROR - app.py - special_exception_handler - 43 - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2022-06-28 18:20:13,582 - ERROR - app.py - log_exception - 1891 - Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1926, in dispatch_request
+    self.raise_routing_exception(req)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1908, in raise_routing_exception
+    raise request.routing_exception
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\ctx.py", line 350, in match_request
+    result = self.url_adapter.match(return_rule=True)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\werkzeug\routing.py", line 1945, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1816, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1741, in handle_http_exception
+    handler = self._find_error_handler(e)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1708, in _find_error_handler
+    handler = handler_map.get(cls)
+AttributeError: 'function' object has no attribute 'get'
+2022-06-28 18:20:13,587 - ERROR - app.py - special_exception_handler - 43 - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2022-07-04 11:54:22,415 - ERROR - app.py - log_exception - 1891 - Exception on /RIESGOS [GET]
+Traceback (most recent call last):
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File ".\app.py", line 130, in decorated_route
+    return original_route(*args, **kwargs)
+  File ".\app.py", line 609, in Pagina_riesgos
+    return render_template('Menu_pages/Menu Principal/Riesgos.html', all_roles=roles, all_users=users)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\templating.py", line 138, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\jinja2\environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\jinja2\environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\jinja2\environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\jinja2\loaders.py", line 115, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\templating.py", line 60, in get_source
+    return self._get_source_fast(environment, template)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\templating.py", line 89, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: Menu_pages/Menu Principal/Riesgos.html
+2022-07-04 11:54:22,661 - ERROR - app.py - special_exception_handler - 43 - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2022-07-04 11:54:22,745 - ERROR - app.py - log_exception - 1891 - Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1926, in dispatch_request
+    self.raise_routing_exception(req)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1908, in raise_routing_exception
+    raise request.routing_exception
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\ctx.py", line 350, in match_request
+    result = self.url_adapter.match(return_rule=True)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\werkzeug\routing.py", line 1945, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1816, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1741, in handle_http_exception
+    handler = self._find_error_handler(e)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1708, in _find_error_handler
+    handler = handler_map.get(cls)
+AttributeError: 'function' object has no attribute 'get'
+2022-07-04 11:54:22,841 - ERROR - app.py - special_exception_handler - 43 - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2022-07-04 14:40:43,967 - ERROR - app.py - log_exception - 1891 - Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1926, in dispatch_request
+    self.raise_routing_exception(req)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1908, in raise_routing_exception
+    raise request.routing_exception
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\ctx.py", line 350, in match_request
+    result = self.url_adapter.match(return_rule=True)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\werkzeug\routing.py", line 1945, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1816, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1741, in handle_http_exception
+    handler = self._find_error_handler(e)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1708, in _find_error_handler
+    handler = handler_map.get(cls)
+AttributeError: 'function' object has no attribute 'get'
+2022-07-04 14:40:43,971 - ERROR - app.py - special_exception_handler - 43 - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2022-07-04 14:50:23,723 - ERROR - app.py - log_exception - 1891 - Exception on / [GET]
+Traceback (most recent call last):
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File ".\app.py", line 142, in index
+    return render_template('Pagina-inicio.html')
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\templating.py", line 136, in render_template
+    ctx.app.update_template_context(context)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 838, in update_template_context
+    context.update(func())
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask_login\utils.py", line 379, in _user_context_processor
+    return dict(current_user=_get_user())
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask_login\utils.py", line 346, in _get_user
+    current_app.login_manager._load_user()
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask_login\login_manager.py", line 318, in _load_user
+    user = self._user_callback(user_id)
+  File ".\app.py", line 76, in load_user
+    curs.execute("SELECT * from users where email = (?)",[username].lower())
+AttributeError: 'list' object has no attribute 'lower'
+2022-07-04 14:50:23,754 - ERROR - app.py - special_exception_handler - 43 - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2022-07-04 14:50:23,816 - ERROR - app.py - log_exception - 1891 - Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1926, in dispatch_request
+    self.raise_routing_exception(req)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1908, in raise_routing_exception
+    raise request.routing_exception
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\ctx.py", line 350, in match_request
+    result = self.url_adapter.match(return_rule=True)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\werkzeug\routing.py", line 1945, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1816, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1741, in handle_http_exception
+    handler = self._find_error_handler(e)
+  File "D:\PORTAL_ANALITICA\venv\lib\site-packages\flask\app.py", line 1708, in _find_error_handler
+    handler = handler_map.get(cls)
+AttributeError: 'function' object has no attribute 'get'
+2022-07-04 14:50:23,816 - ERROR - app.py - special_exception_handler - 43 - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2022-07-04 14:59:19,109 - ERROR - app.py - special_exception_handler - 43 - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2022-07-04 14:59:24,602 - ERROR - app.py - special_exception_handler - 43 - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2022-07-04 15:00:38,475 - ERROR - app.py - special_exception_handler - 43 - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2022-07-04 15:00:38,530 - ERROR - app.py - special_exception_handler - 43 - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2022-07-04 17:53:23,104 - ERROR - app.py - special_exception_handler - 43 - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.

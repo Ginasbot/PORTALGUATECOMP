@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Portal Chasqui</title>
+      <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}"/>
+  <!-- plugins:css -->
+  <link href="{{ url_for('static', filename='New_portal/vendors/feather/feather.css') }}"  rel="stylesheet" type="text/css"  />
+  <link href="{{ url_for('static', filename='New_portal/vendors/ti-icons/css/themify-icons.css') }}"  rel="stylesheet" type="text/css"  />
+  <link href="{{ url_for('static', filename='New_portal/vendors/css/vendor.bundle.base.css') }}"  rel="stylesheet" type="text/css"  />
+  <link href="{{ url_for('static', filename='New_portal/css/vertical-layout-light/style.css') }}"  rel="stylesheet" type="text/css"  />
+  <link   href="{{ url_for('static', filename='New_portal/images/logo-mini.svg') }}"  rel="stylesheet" type="image/png"  />
+
+<style>
+.bgimg-1 {
+background-image: url("{{ url_for('static', filename='New_portal/images/logo1.svg') }}");
+      height: 100vh;
+
+/* Center and scale the image nicely */
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;}
+</style>
+</head>
+
+<body>
+  <div class="container-scroller">
+    <div class="container-fluid page-body-wrapper full-page-wrapper ">
+      <div class="content-wrapper d-flex align-items-center auth px-0 bgimg-1">
+        <div class="row w-100 mx-0">
+          <div class="col-lg-4 mx-auto">
+            <div class="auth-form-light text-left py-5 px-4 px-sm-5">
+           <!--   <div class="brand-logo">
+                <img src="{{ url_for('static', filename='New_portal/images/logochasky.svg') }}"  alt="logo">
+              </div>-->
+
+              <h4>Modifica accesos de los usuarios</h4>
+
+                {% with messages = get_flashed_messages(with_categories=true) %}
+ {% if messages %}
+   {% for category, message in messages %}
+     <div class="alert alert-{{ category }} alert-dismissible fade show">{{ message }}
+       <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+         <span aria-hidden="true">&times;</span>
+       </button>
+     </div>
+   {% endfor %}
+ {% endif %}
+ {% endwith %}
+
+ {% if error %}
+ <div class="alert alert-danger alert-dismissible fade show">{{error}}
+   <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+     <span aria-hidden="true">&times;</span>
+   </button>
+ </div>
+ {% endif %}
+
+ {% if msg %}
+ <div class="alert alert-success alert-dismissible fade show">{{msg}}
+   <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+     <span aria-hidden="true">&times;</span>
+   </button>
+ </div>
+ {% endif %}
+
+ <!-- end flash messages -->
+<div>
+    {% block body %}
+    {% endblock %}
+ <!-- flash messages -->
+ </div>
+              <h6 class="font-weight-light">Registrate </h6>
+
+              <form  method="POST"  class="pt-3" action="/admin/add-user">
+                      <div class="form-group">
+                  <input type="text" class="form-control form-control-lg" id="exampleInputUsername1" name="first_name"   required autofocus >
+
+                      </div>
+                      <div class="form-group">
+                  <input type="text" class="form-control form-control-lg" id="exampleInputlastname" name="last_name" required >
+
+                </div>
+
+                <div class="form-group">
+                  <input type="email" class="form-control form-control-lg" id="exampleInputEmail1" name="email" required >
+
+                </div>
+
+                <div class="form-group">
+                  <input type="password" class="form-control form-control-lg" id="exampleInputPassword1" name="password" required >
+
+                </div>
+
+                    <div class="form-group">
+                  <input type="password" class="form-control form-control-lg" id="exampleInputPassword2" name="confirm_password"  required >
+                </div>
+
+           <label for="role">Role :</label>
+    <select name="role" class="form-control" required>
+        <option value="" selected disabled hidden> -- Choose role -- </option>
+        {% for role in all_roles %}
+       <option value="{{ role[0] }}">{{ role[0] }}</option>
+    {% endfor %}
+    </select>
+
+
+
+
+
+
+                <!--
+                <div class="mb-4">
+                  <div class="form-check">
+                    <label class="form-check-label text-muted">
+                      <input type="checkbox" class="form-check-input">
+                      I agree to all Terms & Conditions
+                    </label>
+                  </div>
+                </div>}-->
+                <div class="mt-3">
+
+                  <input type="submit"  class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn"   value="Add User"></p>
+                </div>
+
+
+              </form>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- content-wrapper ends -->
+    </div>
+             {% if all_users.shape[0]>=0 %}
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Role</th>
+                <th>Date Added</th>
+                <th>Date Modified</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            {% for row in all_users.values %}
+            <tr>
+
+                <td> {{ row[1] }}</td>
+                <td> {{ row[2] }}</td>
+                <td> {{ row[3] }}</td>
+                <td> {{ row[5] }}</td>
+                <td> {{ row[6] }}</td>
+                <td> {{ row[7] }}</td>
+
+                <td><form action="{{ url_for('admin_delete_user', user_id=row[0]) }}" method="POST">
+                    <input type="submit" value="Delete"  />
+                </form>    </td>
+
+                <td><form action="{{ url_for('admin_edit_user', user_id=row[0]) }}" method="POST">
+                    <input type="submit" value="Details"  />
+                </form>    </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endif %}
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+  <!-- plugins:js -->
+
+
+    <script src=  "{{ url_for('static', filename='New_portal/js/off-canvas.js') }}"></script>
+  <script src="{{ url_for('static', filename='New_portal/js/hoverable-collapse.js') }}"></script>
+  <script src=  "{{ url_for('static', filename='New_portal/js/template.js') }}"></script>
+  <script src=  "{{ url_for('static', filename='New_portal/js/settings.js') }}"></script>
+  <script src=  "{{ url_for('static', filename='New_portal/js/todolist.js') }}"></script>
+
+  <!-- endinject -->
+</body>
+
+</html>

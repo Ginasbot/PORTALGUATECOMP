@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "portal-hatun-data",
+  "private_key_id": "c484ca25008f26198942b4b7dd7a5647da904085",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDrSIib975V18kM\ntH+uv0Aja4iuNj0RWVy0LiE0HXiTFbB0NRxL988NpfoKqN5Ne1JwZo5HG7SahYR+\nh01qeKOGC11IrGx/u7e6vOTKZ4J26f4XR019gYOiBQiF4OmNekxNjGVu2jOFokfq\ns+JGW8h0Mne9H862DNmiYmTdALQXxSInfDQD72lFBBdjinuMw1zQ0u+MiCYkZXWC\nFelQCthP3mD6AU898hPmvXkT5POyNh5a59tgAlCBKnxrJ5CT5yJeG+95SmyEK1dx\nxn+CkavNePChrrin4NQUhWviwbioyM2j4/VV+0Wz1IPA+K8k/J6TcufpyoiCyB6n\nUIsSldYFAgMBAAECggEAKqhJ7E0sew/WabFH/Py7ujBC5aL7y2tyPVCnwHUfaTtj\ndI40hSl2prjS7p/TPiT/u1U8snO5eNKARRhu1sDslN72mLh6K2ZzVy3sJS5DHyAp\nazsIN5sFrJhRBUTT00y7DMxJj6GL+cyEUW8vtSXq3/ZOc0GTDrqhsqk4NEFuZWiF\nV3lMnASkaUTCkYrXs6WDVujPxDl+MlsJ+inN2fbWzvczh6jvlncqN8euH+IZR+BB\nE9RM+xfEoAyBJLy5MW19HXhow72TT0TU6yFYAtFJ/L1E8iSMxjZ8xmX8JJsdUC8R\nJuyfD1Kylb1UezXDN2LTm7XglWzSttkADY3VTTWAeQKBgQD6p8rfjSK77yEoQj4M\nqqQbIRG6/xCamtAngZvExSnO5569sXzUfITDIOs5vMReu6YZBMNKJjr42eR5CheC\nWx8KGJBLcXpt+8nnq6YkCnRlgtxGNsE4C7LSei/EOBgiRFaX9JPZZ60E6EMPk+hN\nm8RI9p0LogELWTgBMYN5n8woywKBgQDwTNUM0ceKQwfdtwzkHyeuWfVfiNREOeHp\niEJ4OqE/DxgoBrVcN6aca0pirxHn9K03MLXv0nmSAHI9yHB+S/Ew/CEz0eYpxvzn\nF4/Ds40TqN3eRKGZtyCKcFkiM/bks+WIrVXtONt2WN0Hk50l6tGg7E4ekYcKYGxU\npaJCzrmybwKBgQDP1q4L6/VvK/usbDETQ7NLo4IWMkVMTS5oc7n70Ri3rasc070U\nXCOhwPwLJhEWFDbH7AEazNR9X/9otguEVZZJQtDzHadM50klxli+7cRSH84Sknho\nxpqCmDpfU7v/PfcnjO/Dh4oZ1ZU1p4kqQQzjC0pxSOXgyRv9MVc5VF1vPQKBgD6N\ngZhIs4zGTjHlCLIJeibku/8We0sXVjuYgNUTTg5AO6WPuX477l8hfseZkyuygbSw\nNWwsegELpLF4j/AQjMSXnX0D0splRkhR1da30q2fc8H8U6TUCuB+xnUk2cxHGCUw\nGgIanuZ70225e1r3eYJOgTdr4p9M4mZWh5qkfap5AoGBAKvdXwZerzAHp0hXMUyi\nz2A5y+2EJ7IKzQnaqsXeYE9j8G9JKi95cGBJTKKQqTl6pLp9tyAOOFmEiMKYBqW9\nCHKu0JmeyiDaVdPBaKE9CpanT+qqDfqDHZ7X3FxtE5q4z7L1PnRhh2gVUhe124BA\nyqI74rjRTtzAiMsW/ExEtLYI\n-----END PRIVATE KEY-----\n",
+  "client_email": "portalguatemala@portal-hatun-data.iam.gserviceaccount.com",
+  "client_id": "116093598508445531220",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/portalguatemala%40portal-hatun-data.iam.gserviceaccount.com"
+}

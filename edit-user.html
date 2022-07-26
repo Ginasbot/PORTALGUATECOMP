@@ -1,0 +1,93 @@
+{% extends 'base_nueva.html' %}
+
+{% block title %} User Edit {% endblock %}
+
+
+{% block body %} 
+
+<main class="main-content  mt-0">
+
+<section>
+<div class="page-header min-vh-75">
+  <div class="container">
+    <div class="row">
+
+      <div class="page-header align-items-start min-vh-50 pt-1 pb-2 m-1 border-radius-lg" >
+
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-5 text-center mx-auto">
+              <h1 class="text-black mb-2 mt-5">Editar usuario BN</h1>
+              <p class="text-lead text-black"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <div class="row">
+<div class="container">
+        <div class="row mt-lg-n10 mt-md-n11 mt-n10">
+          <div class="col-xl-4 col-lg-5 col-md-7 mx-auto">
+            <div class="card z-index-0">
+
+                <div class="mt-2 position-relative text-center">
+
+                </div>
+              </div>
+              <div class="card-body">
+
+  {% if user %}
+  <form method="POST" action="{{ url_for('admin_update_user', user_id=user[0]) }}">
+
+        <p> <label  for="first_name"> First Name: </label>    
+        <input type="text" id="first_name" name="first_name" required autofocus value="{{ user[1] }}"></p>
+
+        <p> <label  for="last_name"> Last Name: </label>    
+        <input type="text" id="last_name" name="last_name" required value="{{ user[2] }}" ></p>
+
+        <p> <label  for="email"> Email: </label>    
+        <input type="text" id="email" name="email" required value="{{ user[3] }}"></p>
+    
+        <p> <label  for="password"> Password: </label>    
+        <input type="text" id="password" name="password" required value="{{ user[4] }}"></p>
+    
+        <p> <label  for="confirm_password"> Confirm password: </label>    
+        <input type="text" id="confirm_password" name="confirm_password" required value="{{ user[4] }}"></p>
+        <p> 
+        <label for="role">Role :</label>
+        <select name="role" >
+        {% for role in all_roles %}
+           <option value="{{ role[0] }}"{% if role[0] == user[5] %} SELECTED {% endif %}>{{ role[0] }}</option>
+           {% endfor %}
+        
+          </select>
+        </p>
+        <p> <label  for="date_added"> Date Added: </label>    
+            <input type="text" id="date_added" name="date_added" required value="{{ user[6] }}" readonly></p>
+            <p> <label  for="date_modified"> Date Modifed: </label>    
+                <input type="text" id="date_modified" name="date_modified" required value="{{ user[7] }}" readonly></p>
+
+        <p>  
+    <input type="submit" value="Update User"></p>
+
+  </form>
+  
+{% endif %}
+           </div>
+            </div>
+          </div>
+        </div>
+       </div>
+
+  <hr>
+
+  <br>
+
+
+
+    </div>
+     </div>
+</section>
+</main>
+
+{% endblock %}

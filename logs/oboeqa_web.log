@@ -1,0 +1,683 @@
+2022-07-25 16:21:11,379 - ERROR - app.py - log_exception - 1891 - Exception on /update-myaccount/2 [POST]
+Traceback (most recent call last):
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\Proyectos desarrollo\PORTALGUATECOMP\app.py", line 285, in update_myaccount
+    '''UPDATE users SET
+TypeError: can only concatenate str (not "datetime.datetime") to str
+2022-07-25 16:21:11,382 - ERROR - app.py - special_exception_handler - 43 - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2022-07-25 16:21:11,415 - ERROR - app.py - log_exception - 1891 - Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1926, in dispatch_request
+    self.raise_routing_exception(req)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1908, in raise_routing_exception
+    raise request.routing_exception
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\ctx.py", line 350, in match_request
+    result = self.url_adapter.match(return_rule=True)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\werkzeug\routing.py", line 1945, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1816, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1741, in handle_http_exception
+    handler = self._find_error_handler(e)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1708, in _find_error_handler
+    handler = handler_map.get(cls)
+AttributeError: 'function' object has no attribute 'get'
+2022-07-25 16:21:11,416 - ERROR - app.py - special_exception_handler - 43 - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2022-07-25 16:22:54,256 - ERROR - app.py - log_exception - 1891 - Exception on /update-myaccount/1 [POST]
+Traceback (most recent call last):
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\Proyectos desarrollo\PORTALGUATECOMP\app.py", line 285, in update_myaccount
+    '''UPDATE users SET
+TypeError: can only concatenate str (not "datetime.datetime") to str
+2022-07-25 16:22:54,258 - ERROR - app.py - special_exception_handler - 43 - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2022-07-25 16:22:54,308 - ERROR - app.py - log_exception - 1891 - Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1926, in dispatch_request
+    self.raise_routing_exception(req)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1908, in raise_routing_exception
+    raise request.routing_exception
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\ctx.py", line 350, in match_request
+    result = self.url_adapter.match(return_rule=True)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\werkzeug\routing.py", line 1945, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1816, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1741, in handle_http_exception
+    handler = self._find_error_handler(e)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1708, in _find_error_handler
+    handler = handler_map.get(cls)
+AttributeError: 'function' object has no attribute 'get'
+2022-07-25 16:22:54,310 - ERROR - app.py - special_exception_handler - 43 - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2022-07-25 18:03:46,826 - ERROR - app.py - log_exception - 1891 - Exception on /update-myaccount/1 [POST]
+Traceback (most recent call last):
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\Proyectos desarrollo\PORTALGUATECOMP\app.py", line 305, in update_myaccount
+    users = query_users.result().to_dataframe(create_bqstorage_client=True, )
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\google\cloud\bigquery\job\query.py", line 1499, in result
+    do_get_result()
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\google\api_core\retry.py", line 283, in retry_wrapped_func
+    return retry_target(
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\google\api_core\retry.py", line 190, in retry_target
+    return target()
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\google\cloud\bigquery\job\query.py", line 1489, in do_get_result
+    super(QueryJob, self).result(retry=retry, timeout=timeout)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\google\cloud\bigquery\job\base.py", line 728, in result
+    return super(_AsyncJob, self).result(timeout=timeout, **kwargs)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\google\api_core\future\polling.py", line 137, in result
+    raise self._exception
+google.api_core.exceptions.BadRequest: 400 No matching signature for operator = for argument types: INT64, STRING. Supported signature: ANY = ANY at [2:61]
+
+Location: US
+Job ID: 4faf1883-2c31-4b13-b5ca-d310871f8fb9
+
+2022-07-25 18:03:46,831 - ERROR - app.py - special_exception_handler - 43 - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2022-07-25 18:03:46,888 - ERROR - app.py - log_exception - 1891 - Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1926, in dispatch_request
+    self.raise_routing_exception(req)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1908, in raise_routing_exception
+    raise request.routing_exception
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\ctx.py", line 350, in match_request
+    result = self.url_adapter.match(return_rule=True)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\werkzeug\routing.py", line 1945, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1816, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1741, in handle_http_exception
+    handler = self._find_error_handler(e)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1708, in _find_error_handler
+    handler = handler_map.get(cls)
+AttributeError: 'function' object has no attribute 'get'
+2022-07-25 18:03:46,891 - ERROR - app.py - special_exception_handler - 43 - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2022-07-25 18:10:17,035 - ERROR - app.py - log_exception - 1891 - Exception on /update-myaccount/1 [POST]
+Traceback (most recent call last):
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\Proyectos desarrollo\PORTALGUATECOMP\app.py", line 305, in update_myaccount
+    users = query_users.result().to_dataframe(create_bqstorage_client=True, )
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\google\cloud\bigquery\job\query.py", line 1499, in result
+    do_get_result()
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\google\api_core\retry.py", line 283, in retry_wrapped_func
+    return retry_target(
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\google\api_core\retry.py", line 190, in retry_target
+    return target()
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\google\cloud\bigquery\job\query.py", line 1489, in do_get_result
+    super(QueryJob, self).result(retry=retry, timeout=timeout)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\google\cloud\bigquery\job\base.py", line 728, in result
+    return super(_AsyncJob, self).result(timeout=timeout, **kwargs)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\google\api_core\future\polling.py", line 137, in result
+    raise self._exception
+google.api_core.exceptions.BadRequest: 400 No matching signature for operator = for argument types: INT64, STRING. Supported signature: ANY = ANY at [2:61]
+
+Location: US
+Job ID: 83c4bac0-7065-4535-91bc-88fa6cf7976c
+
+2022-07-25 18:10:17,040 - ERROR - app.py - special_exception_handler - 43 - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2022-07-25 18:10:17,088 - ERROR - app.py - log_exception - 1891 - Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1926, in dispatch_request
+    self.raise_routing_exception(req)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1908, in raise_routing_exception
+    raise request.routing_exception
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\ctx.py", line 350, in match_request
+    result = self.url_adapter.match(return_rule=True)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\werkzeug\routing.py", line 1945, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1816, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1741, in handle_http_exception
+    handler = self._find_error_handler(e)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1708, in _find_error_handler
+    handler = handler_map.get(cls)
+AttributeError: 'function' object has no attribute 'get'
+2022-07-25 18:10:17,092 - ERROR - app.py - special_exception_handler - 43 - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2022-07-25 18:11:40,896 - ERROR - app.py - log_exception - 1891 - Exception on /update-myaccount/1 [POST]
+Traceback (most recent call last):
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\Proyectos desarrollo\PORTALGUATECOMP\app.py", line 305, in update_myaccount
+    users = query_users.result().to_dataframe(create_bqstorage_client=True, )
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\google\cloud\bigquery\job\query.py", line 1499, in result
+    do_get_result()
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\google\api_core\retry.py", line 283, in retry_wrapped_func
+    return retry_target(
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\google\api_core\retry.py", line 190, in retry_target
+    return target()
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\google\cloud\bigquery\job\query.py", line 1489, in do_get_result
+    super(QueryJob, self).result(retry=retry, timeout=timeout)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\google\cloud\bigquery\job\base.py", line 728, in result
+    return super(_AsyncJob, self).result(timeout=timeout, **kwargs)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\google\api_core\future\polling.py", line 137, in result
+    raise self._exception
+google.api_core.exceptions.BadRequest: 400 No matching signature for operator = for argument types: INT64, STRING. Supported signature: ANY = ANY at [2:61]
+
+Location: US
+Job ID: 0463300a-3005-4292-ad5d-aa22957ef660
+
+2022-07-25 18:11:40,898 - ERROR - app.py - special_exception_handler - 43 - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2022-07-25 18:11:40,935 - ERROR - app.py - log_exception - 1891 - Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1926, in dispatch_request
+    self.raise_routing_exception(req)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1908, in raise_routing_exception
+    raise request.routing_exception
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\ctx.py", line 350, in match_request
+    result = self.url_adapter.match(return_rule=True)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\werkzeug\routing.py", line 1945, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1816, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1741, in handle_http_exception
+    handler = self._find_error_handler(e)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1708, in _find_error_handler
+    handler = handler_map.get(cls)
+AttributeError: 'function' object has no attribute 'get'
+2022-07-25 18:11:40,937 - ERROR - app.py - special_exception_handler - 43 - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2022-07-25 18:25:43,092 - ERROR - app.py - log_exception - 1891 - Exception on /update-myaccount/1 [POST]
+Traceback (most recent call last):
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\Proyectos desarrollo\PORTALGUATECOMP\app.py", line 295, in update_myaccount
+    query_job.result()
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\google\cloud\bigquery\job\query.py", line 1499, in result
+    do_get_result()
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\google\api_core\retry.py", line 283, in retry_wrapped_func
+    return retry_target(
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\google\api_core\retry.py", line 190, in retry_target
+    return target()
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\google\cloud\bigquery\job\query.py", line 1489, in do_get_result
+    super(QueryJob, self).result(retry=retry, timeout=timeout)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\google\cloud\bigquery\job\base.py", line 728, in result
+    return super(_AsyncJob, self).result(timeout=timeout, **kwargs)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\google\api_core\future\polling.py", line 137, in result
+    raise self._exception
+google.api_core.exceptions.Forbidden: 403 Billing has not been enabled for this project. Enable billing at https://console.cloud.google.com/billing. DML queries are not allowed in the free tier. Set up a billing account to remove this restriction.
+
+Location: US
+Job ID: 26669bc8-07a5-4293-a356-395e576b0448
+
+2022-07-25 18:25:43,096 - ERROR - app.py - special_exception_handler - 43 - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2022-07-25 18:25:43,139 - ERROR - app.py - log_exception - 1891 - Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1926, in dispatch_request
+    self.raise_routing_exception(req)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1908, in raise_routing_exception
+    raise request.routing_exception
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\ctx.py", line 350, in match_request
+    result = self.url_adapter.match(return_rule=True)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\werkzeug\routing.py", line 1945, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1816, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1741, in handle_http_exception
+    handler = self._find_error_handler(e)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1708, in _find_error_handler
+    handler = handler_map.get(cls)
+AttributeError: 'function' object has no attribute 'get'
+2022-07-25 18:25:43,141 - ERROR - app.py - special_exception_handler - 43 - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2022-07-25 18:59:34,267 - ERROR - app.py - log_exception - 1891 - Exception on /update-myaccount/1 [POST]
+Traceback (most recent call last):
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\Proyectos desarrollo\PORTALGUATECOMP\app.py", line 300, in update_myaccount
+    query_job.result()
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\google\cloud\bigquery\job\query.py", line 1499, in result
+    do_get_result()
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\google\api_core\retry.py", line 283, in retry_wrapped_func
+    return retry_target(
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\google\api_core\retry.py", line 190, in retry_target
+    return target()
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\google\cloud\bigquery\job\query.py", line 1489, in do_get_result
+    super(QueryJob, self).result(retry=retry, timeout=timeout)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\google\cloud\bigquery\job\base.py", line 728, in result
+    return super(_AsyncJob, self).result(timeout=timeout, **kwargs)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\google\api_core\future\polling.py", line 137, in result
+    raise self._exception
+google.api_core.exceptions.Forbidden: 403 Billing has not been enabled for this project. Enable billing at https://console.cloud.google.com/billing. DML queries are not allowed in the free tier. Set up a billing account to remove this restriction.
+
+Location: US
+Job ID: 40691135-c8ad-44d9-8d2a-5e5686a15454
+
+2022-07-25 18:59:34,275 - ERROR - app.py - special_exception_handler - 48 - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2022-07-25 18:59:34,344 - ERROR - app.py - log_exception - 1891 - Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1926, in dispatch_request
+    self.raise_routing_exception(req)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1908, in raise_routing_exception
+    raise request.routing_exception
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\ctx.py", line 350, in match_request
+    result = self.url_adapter.match(return_rule=True)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\werkzeug\routing.py", line 1945, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1816, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1741, in handle_http_exception
+    handler = self._find_error_handler(e)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1708, in _find_error_handler
+    handler = handler_map.get(cls)
+AttributeError: 'function' object has no attribute 'get'
+2022-07-25 18:59:34,347 - ERROR - app.py - special_exception_handler - 48 - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2022-07-25 19:19:28,629 - ERROR - app.py - log_exception - 1891 - Exception on /update-myaccount/1 [POST]
+Traceback (most recent call last):
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\Proyectos desarrollo\PORTALGUATECOMP\app.py", line 300, in update_myaccount
+    query_job.result()
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\google\cloud\bigquery\job\query.py", line 1499, in result
+    do_get_result()
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\google\api_core\retry.py", line 283, in retry_wrapped_func
+    return retry_target(
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\google\api_core\retry.py", line 190, in retry_target
+    return target()
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\google\cloud\bigquery\job\query.py", line 1489, in do_get_result
+    super(QueryJob, self).result(retry=retry, timeout=timeout)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\google\cloud\bigquery\job\base.py", line 728, in result
+    return super(_AsyncJob, self).result(timeout=timeout, **kwargs)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\google\api_core\future\polling.py", line 137, in result
+    raise self._exception
+google.api_core.exceptions.Forbidden: 403 Billing has not been enabled for this project. Enable billing at https://console.cloud.google.com/billing. DML queries are not allowed in the free tier. Set up a billing account to remove this restriction.
+
+Location: US
+Job ID: 256bbd23-3edb-4cdf-a92e-9184b1bc637a
+
+2022-07-25 19:19:28,632 - ERROR - app.py - special_exception_handler - 48 - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2022-07-25 19:19:28,696 - ERROR - app.py - log_exception - 1891 - Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1926, in dispatch_request
+    self.raise_routing_exception(req)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1908, in raise_routing_exception
+    raise request.routing_exception
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\ctx.py", line 350, in match_request
+    result = self.url_adapter.match(return_rule=True)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\werkzeug\routing.py", line 1945, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1816, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1741, in handle_http_exception
+    handler = self._find_error_handler(e)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1708, in _find_error_handler
+    handler = handler_map.get(cls)
+AttributeError: 'function' object has no attribute 'get'
+2022-07-25 19:19:28,699 - ERROR - app.py - special_exception_handler - 48 - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2022-07-25 19:24:45,568 - ERROR - app.py - log_exception - 1891 - Exception on /update-myaccount/1 [POST]
+Traceback (most recent call last):
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\Proyectos desarrollo\PORTALGUATECOMP\app.py", line 300, in update_myaccount
+    query_job.result()
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\google\cloud\bigquery\job\query.py", line 1499, in result
+    do_get_result()
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\google\api_core\retry.py", line 283, in retry_wrapped_func
+    return retry_target(
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\google\api_core\retry.py", line 190, in retry_target
+    return target()
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\google\cloud\bigquery\job\query.py", line 1489, in do_get_result
+    super(QueryJob, self).result(retry=retry, timeout=timeout)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\google\cloud\bigquery\job\base.py", line 728, in result
+    return super(_AsyncJob, self).result(timeout=timeout, **kwargs)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\google\api_core\future\polling.py", line 137, in result
+    raise self._exception
+google.api_core.exceptions.Forbidden: 403 Billing has not been enabled for this project. Enable billing at https://console.cloud.google.com/billing. DML queries are not allowed in the free tier. Set up a billing account to remove this restriction.
+
+Location: US
+Job ID: c452d089-8cab-4a47-98e8-a937fdd503ba
+
+2022-07-25 19:24:45,573 - ERROR - app.py - special_exception_handler - 48 - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2022-07-25 19:24:45,614 - ERROR - app.py - log_exception - 1891 - Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1926, in dispatch_request
+    self.raise_routing_exception(req)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1908, in raise_routing_exception
+    raise request.routing_exception
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\ctx.py", line 350, in match_request
+    result = self.url_adapter.match(return_rule=True)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\werkzeug\routing.py", line 1945, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1816, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1741, in handle_http_exception
+    handler = self._find_error_handler(e)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1708, in _find_error_handler
+    handler = handler_map.get(cls)
+AttributeError: 'function' object has no attribute 'get'
+2022-07-25 19:24:45,617 - ERROR - app.py - special_exception_handler - 48 - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2022-07-25 19:30:19,063 - ERROR - app.py - log_exception - 1891 - Exception on /update-myaccount/1 [POST]
+Traceback (most recent call last):
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\Proyectos desarrollo\PORTALGUATECOMP\app.py", line 300, in update_myaccount
+    query_job.result()
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\google\cloud\bigquery\job\query.py", line 1499, in result
+    do_get_result()
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\google\api_core\retry.py", line 283, in retry_wrapped_func
+    return retry_target(
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\google\api_core\retry.py", line 190, in retry_target
+    return target()
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\google\cloud\bigquery\job\query.py", line 1489, in do_get_result
+    super(QueryJob, self).result(retry=retry, timeout=timeout)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\google\cloud\bigquery\job\base.py", line 728, in result
+    return super(_AsyncJob, self).result(timeout=timeout, **kwargs)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\google\api_core\future\polling.py", line 137, in result
+    raise self._exception
+google.api_core.exceptions.BadRequest: 400 Table "users" must be qualified with a dataset (e.g. dataset.table).
+
+Location: US
+Job ID: 2e2ae9fc-58e5-4d4f-8f2b-46a4084de6c3
+
+2022-07-25 19:30:19,066 - ERROR - app.py - special_exception_handler - 48 - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2022-07-25 19:30:19,117 - ERROR - app.py - log_exception - 1891 - Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1926, in dispatch_request
+    self.raise_routing_exception(req)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1908, in raise_routing_exception
+    raise request.routing_exception
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\ctx.py", line 350, in match_request
+    result = self.url_adapter.match(return_rule=True)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\werkzeug\routing.py", line 1945, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1816, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1741, in handle_http_exception
+    handler = self._find_error_handler(e)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1708, in _find_error_handler
+    handler = handler_map.get(cls)
+AttributeError: 'function' object has no attribute 'get'
+2022-07-25 19:30:19,119 - ERROR - app.py - special_exception_handler - 48 - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2022-07-25 19:31:56,034 - ERROR - app.py - log_exception - 1891 - Exception on /update-myaccount/1 [POST]
+Traceback (most recent call last):
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\Proyectos desarrollo\PORTALGUATECOMP\app.py", line 300, in update_myaccount
+    query_job.result()
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\google\cloud\bigquery\job\query.py", line 1499, in result
+    do_get_result()
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\google\api_core\retry.py", line 283, in retry_wrapped_func
+    return retry_target(
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\google\api_core\retry.py", line 190, in retry_target
+    return target()
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\google\cloud\bigquery\job\query.py", line 1489, in do_get_result
+    super(QueryJob, self).result(retry=retry, timeout=timeout)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\google\cloud\bigquery\job\base.py", line 728, in result
+    return super(_AsyncJob, self).result(timeout=timeout, **kwargs)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\google\api_core\future\polling.py", line 137, in result
+    raise self._exception
+google.api_core.exceptions.BadRequest: 400 Table "users" must be qualified with a dataset (e.g. dataset.table).
+
+Location: US
+Job ID: c8fc6ac0-061c-456b-ba70-16c8fd43f699
+
+2022-07-25 19:31:56,043 - ERROR - app.py - special_exception_handler - 48 - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2022-07-25 19:31:56,108 - ERROR - app.py - log_exception - 1891 - Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1926, in dispatch_request
+    self.raise_routing_exception(req)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1908, in raise_routing_exception
+    raise request.routing_exception
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\ctx.py", line 350, in match_request
+    result = self.url_adapter.match(return_rule=True)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\werkzeug\routing.py", line 1945, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1816, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1741, in handle_http_exception
+    handler = self._find_error_handler(e)
+  File "D:\BCP\ALGORTIMO\PORTALGUATECOMP\lib\site-packages\flask\app.py", line 1708, in _find_error_handler
+    handler = handler_map.get(cls)
+AttributeError: 'function' object has no attribute 'get'
+2022-07-25 19:31:56,110 - ERROR - app.py - special_exception_handler - 48 - 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.

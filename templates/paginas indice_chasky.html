@@ -1,0 +1,175 @@
+
+        <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('dashboard')}}" >
+              <i class="icon-grid menu-icon"></i>
+              <span class="menu-title">Menú Principal</span>
+            </a>
+          </li>
+          <li class="nav-item">
+                   {% if current_user.is_authenticated %}
+            <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+              <i class="icon-layout menu-icon"></i>
+
+              <span class="menu-title">Menú Analitica</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="ui-basic">
+              <ul class="nav flex-column sub-menu">
+
+
+
+                  {% if (current_user.role=='CUMPLIMIENTO') or (current_user.role=='admin') %}
+
+                <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('Pagina_Cumplimiento') }}">Cumplimiento</a>
+              </li>
+
+                {% endif %}
+
+            {%  if (current_user.role=='BANCA DIGITAL') or (current_user.role=='admin')  %}
+
+               <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('Pagina_Bancadigital') }}">Banca Digital</a>
+              </li>
+
+                {% endif %}
+
+            {%  if (current_user.role=='AUDITORIA INTERNA') or (current_user.role=='admin')  %}
+
+                       <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('Pagina_Auditoriainterna') }}">Auditoria Interna</a>
+              </li>
+
+                {% endif %}
+
+                     {%  if (current_user.role=='INCLUSION FINANCIERA') or (current_user.role=='admin')  %}
+
+               <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('Pagina_Inclusionfinanciera') }}">Inclusión Financiera</a>
+              </li>
+
+                {% endif %}
+
+                                     {%  if (current_user.role=='RIESGOS') or (current_user.role=='FRAUDES') or (current_user.role=='admin')  %}
+
+               <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('Pagina_riesgos') }}">Riesgos</a>
+              </li>
+
+                {% endif %}
+
+
+            {%  if (current_user.role=='FRAUDES') or (current_user.role=='admin') or  (current_user.role=='RIESGOS')   %}
+
+             <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('Pagina_Fraudes') }}">Fraudes</a>
+              </li>
+
+                {% endif %}
+
+              </ul>
+            </div>
+                {% endif %}
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#form-elements" aria-expanded="false" aria-controls="form-elements">
+              <i class="icon-columns menu-icon"></i>
+              <span class="menu-title">Paginas Recomendadas</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="form-elements">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"><a class="nav-link" href="https://www.guatecompras.gt/"  target="_blank">Guatecompras</a></li>
+              </ul>
+            </div>
+                     <div class="collapse" id="form-elements">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"><a class="nav-link" href="https://www.rgae.gob.gt/"  target="_blank">RGAE</a></li>
+              </ul>
+            </div>
+              
+
+          </li>
+            <!-- <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#charts" aria-expanded="false" aria-controls="charts">
+              <i class="icon-bar-graph menu-icon"></i>
+              <span class="menu-title">Charts</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="charts">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="pages/charts/chartjs.html">ChartJs</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#tables" aria-expanded="false" aria-controls="tables">
+              <i class="icon-grid-2 menu-icon"></i>
+              <span class="menu-title">Tables</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="tables">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="pages/tables/basic-table.html">Basic table</a></li>
+              </ul>
+            </div>
+          </li> -->
+        <!--  <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#icons" aria-expanded="false" aria-controls="icons">
+              <i class="icon-contract menu-icon"></i>
+              <span class="menu-title">Proyectos</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="icons">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="{{ url_for('Proyectos_Analitica') }}">Seguimiento de proyectos</a></li>
+              </ul>
+                <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="{{ url_for('formulario_Analitica') }}">Registro de proyectos</a></li>
+              </ul>
+            </div>
+          </li>
+-->
+       {% if current_user.is_authenticated %}
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
+              <i class="icon-head menu-icon"></i>
+              <span class="menu-title">Configuración Usuario</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="auth">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="{{ url_for('my_account', user_id=current_user['_id']) }}">{{ current_user.username }} </a></li>
+
+  {% if current_user.role=='admin' %}
+                <li class="nav-item"> <a class="nav-link" href="{{ url_for('admin_users')}}"> Usuarios </a></li>
+                  <li class="nav-item"> <a class="nav-link" href="{{ url_for('logout')}}"> Logout </a></li>
+       {% else %}
+        <li class="nav-item"> <a class="nav-link" href="{{ url_for('logout')}}"> Logout </a></li>
+                    {% endif %}
+              </ul>
+            </div>
+          </li>
+      {% endif %}
+
+          <!--<li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#error" aria-expanded="false" aria-controls="error">
+              <i class="icon-ban menu-icon"></i>
+              <span class="menu-title">Error pages</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="error">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="pages/samples/error-404.html"> 404 </a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/samples/error-500.html"> 500 </a></li>
+              </ul>
+            </div>
+          </li>-->
+          <li class="nav-item">
+            <a class="nav-link" href="mailto:luiggi11.16@gmail.com;tooru.ogata@gmail.com;edsonhc16@gmail.com;c.julcasan@gmail.com &subject=Consultas toolkit Guatecompras&body=Estimado Equipo de Hatundata. Tengo una consulta...." >
+              <i class="icon-paper menu-icon"></i>
+              <span class="menu-title">Envianos un correo</span>
+            </a>
+          </li>
+
+

@@ -900,5 +900,5 @@ def reporte_riesgos_scoring():
     return render_template('reportes/Riesgos/Reporte_Scoring.html', all_roles=roles, all_users=users)
 if __name__ == "__main__":
     app.secret_key = os.urandom(24)
-    app.run()
+    app.run(host='127.0.0.1', port=8080, debug=True)
  #app.run(debug=True)host='0.0.0.0', port=5000,v

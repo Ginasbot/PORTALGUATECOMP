@@ -3,27 +3,24 @@
 #  Autor : Luiggi Silva  / luiggi11.16@gmail.com /996261574
 #
 ########################################################################################################################
-import firebase_admin
-from firebase_admin import credentials
 
 
 import os
 from dotenv import load_dotenv
-import pymongo
 import datetime
-from bson.objectid import ObjectId
+#from bson.objectid import ObjectId
 from flask import Flask, request, render_template, redirect, url_for, session, flash
 from flask_login import LoginManager, UserMixin, current_user, login_user, logout_user, login_required
-import bcrypt
+#import bcrypt
 from functools import wraps
-import sqlite3
+#import sqlite3
 app = Flask(__name__)
 app.secret_key = os.urandom(24)
 login_manager = LoginManager()
 login_manager.init_app(app)
-import logging
-from logging.handlers import RotatingFileHandler
-from firebase_admin import credentials, firestore, initialize_app
+#import logging
+#from logging.handlers import RotatingFileHandler
+#from firebase_admin import credentials, firestore, initialize_app
 
 
 ########################################################################################################################

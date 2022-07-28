@@ -913,10 +913,12 @@ def reporte_riesgos_scoring():
 
 
 @app.route('/MODELOS')
-def model():
+@login_required
+def modelos():
 	return render_template('reportes/MODELOS_PREDICCION.html')
 
 @app.route('/MODELOS/predict', methods=['POST'])
+@login_required
 def predict():
 
     # Alternative Usage of Saved Model

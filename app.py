@@ -913,7 +913,7 @@ def reporte_riesgos_scoring():
 
 
 @app.route('/MODELOS')
-def home():
+def model():
 	return render_template('reportes/MODELOS_PREDICCION.html')
 
 @app.route('/MODELOS/predict', methods=['POST'])

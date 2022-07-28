@@ -102,7 +102,7 @@ background-size: cover;}
            <label for="role">Role :</label>
     <select name="role" class="form-control" required>
         <option value="" selected disabled hidden> -- Choose role -- </option>
-        {% for role in all_roles %}
+        {% for role in all_roles.values %}
        <option value="{{ role[0] }}">{{ role[0] }}</option>
     {% endfor %}
     </select>

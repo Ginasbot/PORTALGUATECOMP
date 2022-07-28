@@ -98,7 +98,7 @@ background-size: cover;}
                 </div>
 
             <select name="role" >
-             {% for role in all_roles %}
+             {% for role in all_roles.values %}
            <option value="{{ role[0] }}"{% if role[0] == user[5] %} SELECTED {% endif %}>{{ role[0] }}</option>
            {% endfor %}
             </select>

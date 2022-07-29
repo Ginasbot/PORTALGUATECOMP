@@ -1101,8 +1101,8 @@ def predict():
         # vect = cv.transform(data).toarray()
         my_prediction = process(data)
         Valor = int(my_prediction[0:2])
-        texto=data
-    return render_template('reportes/MODELOS_PREDICCIONRESPUESTA.html', prediction=my_prediction, Valor=Valor,texto=data)
+        texto=data[0]
+    return render_template('reportes/MODELOS_PREDICCIONRESPUESTA.html', prediction=my_prediction, Valor=Valor,texto= texto)
 
 
 if __name__ == "__main__":

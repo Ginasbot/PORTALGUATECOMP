@@ -675,7 +675,21 @@ def reporte_SBS_MORA():
     roles = query_roles.result().to_dataframe(create_bqstorage_client=True, )
     return render_template('reportes/SBS_MORA.html', all_roles=roles, all_users=users)
 
+@app.route('/SBS_MORA2', methods=['GET', 'POST'])
+@login_required
+def reporte_SBS_MORA2():
+    query_usersmail = client.query("""
+          SELECT email
+          FROM Portal_data.users
+          """)
+    users = query_usersmail.result().to_dataframe(create_bqstorage_client=True, )
 
+    query_roles = client.query("""
+          SELECT roles
+          FROM  Portal_data.roles
+          """)
+    roles = query_roles.result().to_dataframe(create_bqstorage_client=True, )
+    return render_template('reportes/SBS_MORA2.html', all_roles=roles, all_users=users)
 @app.route('/SBS_FINANCIERO', methods=['GET', 'POST'])
 @login_required
 def reporte_SBS_FINANCIERO():

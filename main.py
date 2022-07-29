@@ -229,7 +229,7 @@ def test_01():
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     if current_user.is_authenticated:
-        return redirect(url_for('index'))
+        return redirect(url_for('dashboard'))
     if request.method == 'POST':
         '''conn = sqlite3.connect('database.db')
         curs = conn.cursor()
@@ -254,7 +254,7 @@ def login():
                 next_page = url_for('index')
                 return redirect(next_page)
             flash("Ingreso Exitosamente!", category='success')
-            return redirect(request.args.get("next") or url_for("index"))
+            return redirect(request.args.get("next") or url_for("dashboard"))
 
         flash("Ingrese correctamente su  usuario o contraseña!", category='error')
     return render_template('Menu_login/login Chasky.html')

@@ -197,6 +197,11 @@ def index():
 def register():
    return render_template('Menu_login/register_visitor.html')
 
+
+@app.route('/MODELOS')
+@login_required
+def modelos():
+    return render_template('reportes/MODELOS_PREDICCION.html')
 ########################################################################################################################
 
 #PAGINA DE PRUEBAS
@@ -912,15 +917,11 @@ def reporte_riesgos_scoring():
     return render_template('reportes/Riesgos/Reporte_Scoring.html', all_roles=roles, all_users=users)
 
 
-@app.route('/MODELOS')
-@login_required
-def modelos():
-	return render_template('reportes/MODELOS_PREDICCION.html')
+
 
 @app.route('/MODELOS/predict', methods=['POST'])
 @login_required
 def predict():
-
     # Alternative Usage of Saved Model
     # joblib.dump(clf, 'NB_spam_model.pkl')
     # NB_spam_model = open('NB_spam_model.pkl','rb')

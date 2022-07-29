@@ -13,6 +13,11 @@ from flask import Flask, request, render_template, redirect, url_for, session, f
 from flask_login import LoginManager, UserMixin, current_user, login_user, logout_user, login_required
 # import bcrypt
 from functools import wraps
+from flask import Flask, render_template, url_for, request
+import pandas as pd
+import pickle
+from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.naive_bayes import MultinomialNB
 
 # import sqlite3
 app = Flask(__name__)
@@ -204,6 +209,12 @@ def register():
     return render_template('Menu_login/register_visitor.html')
 
 
+@app.route('/MODELOS')
+@login_required
+def modelos():
+    return render_template('reportes/MODELOS_PREDICCION.html')
+
+
 ########################################################################################################################
 
 # PAGINA DE PRUEBAS
@@ -358,8 +369,8 @@ def visitor_add_user():
         if request.form['password'] != request.form['confirm_password']:
             flash('La contraseña de validación es distinta a la contraseña', 'warning')
             return redirect(url_for('visitor_users'))
-        if "@bn.com.pe" not in request.form['email'].lower():
-            flash('Ingrese un correo del banco', 'warning')
+        if "@" not in request.form['email'].lower():
+            flash('Ingrese un correo valido', 'warning')
             return redirect(url_for('visitor_users'))
         insertUser(form['first_name'], form['last_name'], form['email'].lower(), password, form['role'])
 
@@ -514,8 +525,12 @@ def admin_delete_user(user_id):
                SELECT * FROM Portal_data.users where id  =""" + '"' + user_id + '"')
     users = query_users.result().to_dataframe(create_bqstorage_client=True, )
     delete_user = users.iloc[0, :]
+    try:
+        existe = delete_user.shape[0] >= 1
+    except:
+        existe = 0
 
-    if delete_user:
+    if existe:
         # conn = sqlite3.connect('database.db')
         # cur = conn.cursor()
         # cur.execute("DELETE FROM  users WHERE user_id = (?)", (user_id,))
@@ -544,7 +559,7 @@ def admin_edit_user(user_id):
     # conn.close()
 
     query_users = client.query("""
-                          SELECT * FROM Portal_data.users where id =""" + '"' + user_id + '"')
+                          SELECT * FROM Portal_data.users where id =""" + user_id)
     users = query_users.result().to_dataframe(create_bqstorage_client=True, )
     edit_user = users.iloc[0, :]
 
@@ -553,7 +568,12 @@ def admin_edit_user(user_id):
           FROM  Portal_data.roles
           """)
     roles = query_roles.result().to_dataframe(create_bqstorage_client=True, )
-    if edit_user:
+    try:
+        existe = edit_user.shape[0] >= 1
+    except:
+        existe = 0
+
+    if existe:
         return render_template('Menu_login/edit-user 2.html', user=edit_user, all_roles=roles)
     flash('User not found.', 'warning')
     return redirect(url_for('admin_users'))
@@ -934,6 +954,140 @@ def reporte_riesgos_scoring():
        """)
     roles = query_roles.result().to_dataframe(create_bqstorage_client=True, )
     return render_template('reportes/Riesgos/Reporte_Scoring.html', all_roles=roles, all_users=users)
+
+
+@app.route('/MODELOS/predict', methods=['POST'])
+@login_required
+def predict():
+    # Alternative Usage of Saved Model
+    # joblib.dump(clf, 'NB_spam_model.pkl')
+    # NB_spam_model = open('NB_spam_model.pkl','rb')
+    # clf = joblib.load(NB_spam_model)
+
+    # 01. Import libraries
+
+    # Básicos
+    from operator import contains
+    import pandas as pd
+    import numpy as np
+    import re
+    import string
+    import pickle
+    import joblib
+    from datetime import datetime
+    from unidecode import unidecode
+    from pathlib import Path
+    import warnings
+
+    # Formato
+    from num2words import num2words
+
+    # Scikit-learn
+    from sklearn import metrics
+    from sklearn.feature_extraction.text import TfidfVectorizer
+    from sklearn.feature_selection import chi2
+
+    # NLTK
+    import nltk
+    from nltk.stem import WordNetLemmatizer
+    from nltk.tokenize import word_tokenize
+    from nltk.corpus import stopwords
+
+    # Spacy
+    import spacy
+    from spacy_spanish_lemmatizer import SpacyCustomLemmatizer
+    import es_core_news_sm
+    # import es_core_news_lg
+
+    # Scikit-learn
+    from sklearn.neighbors import KNeighborsClassifier
+    from sklearn.linear_model import LogisticRegression
+    from sklearn.model_selection import train_test_split
+    from sklearn.model_selection import cross_val_score
+    from sklearn.model_selection import GridSearchCV
+    from sklearn.calibration import CalibratedClassifierCV
+    from sklearn.utils.class_weight import compute_sample_weight
+    from sklearn.metrics import accuracy_score
+    from sklearn import preprocessing
+    from sklearn.feature_extraction.text import CountVectorizer
+    from sklearn.metrics import cohen_kappa_score, make_scorer, log_loss
+    from sklearn.metrics import classification_report
+    from sklearn.metrics import confusion_matrix
+
+    # limpieza de  texto
+    def formato_texto(texto):
+        texto = texto.upper()
+        texto = texto.translate(str.maketrans("ÁÉÍÓÚ", "AEIOU"))
+        texto = texto.translate(str.maketrans("ÀÈÌÒÙ", "AEIOU"))
+        texto = texto.translate(str.maketrans("ÂÊÎÔÛ", "AEIOU"))
+        texto = ' '.join(texto.split())
+
+        return texto
+
+    def remover_numeros_puntuacion(texto):
+        texto = texto.translate(str.maketrans('', '', string.digits))
+        texto = texto.translate(str.maketrans('', '', string.punctuation + '¡¿°º-–•“”‘’´ª¨'))
+        texto = ' '.join(texto.split())
+
+        return texto
+
+    def remover_stopwords(texto):
+        # Retirar stopwords
+        stopwords_spanish = pd.read_csv('static/recursos/stopwords_spanish.csv')
+        stopwords_spanish = stopwords_spanish['WORD'].tolist()
+
+        stopwords_esp = [formato_texto(i) for i in stopwords_spanish]
+
+        preposiciones = ['A', 'ANTE', 'BAJO', 'CABE', 'CON', 'CONTRA', 'DE', 'DESDE', 'DURANTE', 'EN', 'ENTRE', 'HACIA',
+                         'HASTA', 'MEDIANTE', 'PARA', 'POR', 'SEGUN', 'SIN', 'SOBRE', 'TRAS', 'VERSUS', 'VIA',
+                         'RESPECTO']
+
+        stopwords_esp = list(set(preposiciones + stopwords_esp))
+        texto = ' '.join([i for i in texto.split() if i not in stopwords_esp])
+
+        return texto
+
+    def limpieza_texto(texto):
+        # Limpieza de tildes
+        texto_limp = formato_texto(texto)
+
+        # Remoción de números y puntuación
+        texto_limp = remover_numeros_puntuacion(texto_limp)
+
+        # Remoción de stopwords
+        texto_limp = remover_stopwords(texto_limp)
+
+        return texto_limp
+
+    def process(text):
+        data = {'TEXTO': [text]}
+        df_train_test = pd.DataFrame(data)
+
+        df_train_test['TEXTO_LIMP'] = df_train_test['TEXTO'].astype(str).apply(lambda x: limpieza_texto(x))
+
+        # %% TD IDF
+        # Carga de vocabulario
+        tf_idf = joblib.load('static/version/tf_idf_unigram.pkl')
+
+        df_train_test['FEATURES'] = list(tf_idf.transform(df_train_test['TEXTO_LIMP']).toarray())
+
+        #################################
+        # %% LOGISTIC REGRESSION
+
+        log_model = joblib.load('static/version/log_model.pkl')
+        x_pred = pd.DataFrame(df_train_test['FEATURES'].to_list())
+        y_pred = log_model.predict(x_pred)
+        y_prob = log_model.predict_proba(x_pred)[::, 1]
+        y_prob = str(round(y_prob[0] * 100, 2)) + "%"
+        return y_prob
+
+    if request.method == 'POST':
+        message = request.form['message']
+        data = [message]
+        # vect = cv.transform(data).toarray()
+        my_prediction = process(data)
+        Valor = int(my_prediction[0:2])
+    return render_template('reportes/MODELOS_PREDICCIONRESPUESTA.html', prediction=my_prediction, Valor=Valor)
 
 
 if __name__ == "__main__":

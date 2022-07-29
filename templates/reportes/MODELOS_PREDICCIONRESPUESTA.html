@@ -110,12 +110,14 @@
 
 		<h2>Modelo de probabilidad de exito</h2>
 </br>
-      De acuerdo a sus caracteristicas de su adjudicación el resultado estimado de la probabilidad de exito es :
+      De acuerdo al nombre de producto y caracteristicas:
+
       </br>
+        {{ texto }}
               </br>
                     	<div class="results">
 
-	<h3 style="color:blue;">La probabilidad es {{ prediction }}</h3>
+	<h3 style="color:blue;">La probabilidad de exito es {{ prediction }}</h3>
 
             {% if Valor<50 %}
                  La probabilidad es baja, tendras que aplicar mejores estrategias para mejorar el exito de su convocatoria
